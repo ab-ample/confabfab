@@ -1,4 +1,10 @@
 body {
-    font-size: 20vw;
-    background-color: green;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+em {
+    background-color: lightgoldenrodyellow;
+    padding: 0 5px;
+    border-radius: 5px;
 }
