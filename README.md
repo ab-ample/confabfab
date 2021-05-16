@@ -1,6 +1,6 @@
 # confabfab
 
-🎉 lezz gooo!
+🎉 letzz gooo!
 
 WOHO
 
