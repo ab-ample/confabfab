@@ -1,6 +1,9 @@
 body {
     font-size: 20px;
     line-height: 26px;
+}
+
+main {
     max-width: 960px;
 }
 
@@ -8,4 +11,9 @@ em {
     background-color: lightgoldenrodyellow;
     padding: 0 5px;
     border-radius: 5px;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #404040;
 }
