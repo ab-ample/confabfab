@@ -1,6 +1,7 @@
 body {
     font-size: 20px;
     line-height: 26px;
+    cursor: none;
 }
 
 main {
@@ -11,6 +12,13 @@ em {
     background-color: lightgoldenrodyellow;
     padding: 0 5px;
     border-radius: 5px;
+}
+
+canvas {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 footer {
