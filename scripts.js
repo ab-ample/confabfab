@@ -1,4 +1,4 @@
-console.log('Ready!');
+console.log('🐓  🎀  𝒫𝒶𝓊𝓁𝒶, 𝒜𝓁𝑒𝒿𝒶𝓃𝒹𝓇☯, 𝐵𝒿ö𝓇𝓃  🎀  🐓');
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
