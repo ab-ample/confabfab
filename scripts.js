@@ -1,3 +1,5 @@
+console.log('Ready!');
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
 }
