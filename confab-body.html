@@ -91,15 +91,15 @@
             
             <!-- video soon here -->
 
-            <p alt="description of the talk">
+            <p class="captioned" alt="description of the talk">
                 Taking the lead from Fred Moten and Harney’s criticism of academia and call for dissident forms of knowledge production, this presentation will explore the lives and the work of a group of 20th century figures that enacted forms of fugitivity avant-la-lettre. We will adopt a notion of fugitivity intended both as a breaching of the institutional frame, as well as a desire to trespass the boundaries between theory and practice, different media, literary genres and ultimately art and politics. We will first examine how critic Carla Lonzi’s decision to leave the artworld and embrace separatist feminism, was paralleled by a transfiguration of her mode of writing, aimed at challenging the artifice of language. We will then move to the erratic literary production of 70s gay activist Mario Mieli, which we will examine in light of his political attempt to replace identity with a world of erotic abundance.
             </p>                
 
-            <p class="bio" alt="Biography of Luisa Lorenza Corna">
+            <p class="bio captioned" alt="Biography of Luisa Lorenza Corna">
                 Luisa Lorenza Corna is an art and design historian teaching at Middlesex University. Her main areas of research are art, Marxism and feminism. She has written for various art and design magazines, amongst which Texte Zur Kunst, Art Monthly, Flash Art and Domus. She is completing an anthology of writings of the feminist art historian Carla Lonzi for Seagull. Her first monograph, tentatively titled Fugitivity and Militancy in Post-War Criticism, seeks to question the epistemological constraints of art history and academia, through recounting the lives and the works of a selection on critics that left the artworld in favour of direct political activity or independent pedagogical projects.
             </p>
             
-            <p class="references" alt="References">
+            <p class="references captioned" alt="References">
                 <ul>
                     <li>Rosen : On Quitting by Keguro Macharia https://thenewinquiry.com/on-quitting/
                     <li>Rosen : The Undercommons: Fugitive Planning & Black Study by Fred Moten and Stefano Harney</li>
@@ -117,7 +117,7 @@
                 </ul>
             </p>
 
-            <p class="transcript" alt="transcription">
+            <p class="transcript captioned" alt="transcription">
                 Transcription
             </p>
 
@@ -128,15 +128,15 @@
             
             <!-- video soon here -->
 
-            <p alt="description of the talk">
+            <p class="captioned" alt="description of the talk">
                 Walking along a the uneven accountabilities of trans* feminist technoscience and critical pedagogy: Feeling out T*FTS (Trans*FeministTechnoScience) will be a lecture based in a not emerged (non-linear and between) timeline. Based in queer theory, trans* studies, feminist technoscience and disability justice the lecture will be a remixing of different theoretical texts and artistic and design projects that have impacted me as an artist and researcher. Feelings will be prioritised and omissions are promised.
             </p>                
 
-            <p class="bio" alt="Biography of Luisa Lorenza Corna">
+            <p class="bio captioned" alt="Biography of Luisa Lorenza Corna">
                 Loren Britton is an interdisciplinary artist and researcher tuning with practices of Critical Pedagogy, Trans*FeministTechnoScience and Disability Justice. Playing with the queer potential of undoing norms they practice joyful accountability to matters of anti-racism, collaboration, Black Feminisms, instability and transformation. With Isabel Paehr as MELT, they queer knowledges from computation and chemistry to shift metaphors of melting in times of climate change. Britton is an Associate Lecturer in Queer Feminist Technoscience & Digital Design at i-DAT at the University of Plymouth, UK; and an artistic researcher on the interdisciplinary project ‘Re: Coding Algorithmic Culture’ within the Gender/Diversity in Informatics Systems Research Group at the University of Kassel, DE.
             </p>
             
-            <p class="references" alt="References">
+            <p class="references captioned" alt="References">
                 <ul>
                     <li>http://meltionary.com/hackingconcrete/start.html</li>
                     <li>Maria :  Could you speak a bit more about your relationship to language? By manifesting accessibility within language (ie using the gender star asterisk) isn't there a risk of making the language itself inaccessible to wider audiences?</li>
@@ -156,8 +156,28 @@
                 </ul>
             </p>
 
-            <p class="transcript" alt="transcription">
+            <p class="transcript captioned" alt="transcription">
                 Transcription
             </p>
+            
+            <!-- CAPTIONS -->
+            <div id="caption">
+            <!-- captions displayed here -->
+            </div>
+            <script>
+            let captionTriggers = document.getElementsByClassName('captioned');
+            let captionElement = document.getElementById('caption');
+
+            for (let i = 0; i < captionTriggers.length; i++) {
+              let caption = captionTriggers[i].getAttribute('alt');
+              captionTriggers[i].addEventListener('mouseover', () => {displayCaption(caption)}, false);
+              captionTriggers[i].addEventListener('mouseout', () => {displayCaption('')}, false);
+              // captionTriggers[i].getAttribute('alt')
+            }
+
+            function displayCaption(caption) {
+              captionElement.innerHTML = caption;
+            }
+            </script>
     </body>
 </html>
