@@ -110,7 +110,7 @@
                 Luisa Lorenza Corna is an art and design historian teaching at Middlesex University. Her main areas of research are art, Marxism and feminism. She has written for various art and design magazines, amongst which Texte Zur Kunst, Art Monthly, Flash Art and Domus. She is completing an anthology of writings of the feminist art historian Carla Lonzi for Seagull. Her first monograph, tentatively titled Fugitivity and Militancy in Post-War Criticism, seeks to question the epistemological constraints of art history and academia, through recounting the lives and the works of a selection on critics that left the artworld in favour of direct political activity or independent pedagogical projects.
             </p>
             
-            <p class="references captioned" alt="References">
+            <div class="references captioned" alt="References">
                 <ul>
                     <li>Rosen : On Quitting by Keguro Macharia https://thenewinquiry.com/on-quitting/
                     <li>Rosen : The Undercommons: Fugitive Planning & Black Study by Fred Moten and Stefano Harney</li>
@@ -126,7 +126,7 @@
                     <li>guest_5546 : Posted 10 months ago a means, not an end. this is similar to graphic design</li>
                     <li>guest_5546 :  To return to where you started in positioning yourself in this research and time now</li>
                 </ul>
-            </p>
+            </div>
 
             <p class="transcript captioned" alt="transcription">
                 Transcription
@@ -147,7 +147,7 @@
                 Loren Britton is an interdisciplinary artist and researcher tuning with practices of Critical Pedagogy, Trans*FeministTechnoScience and Disability Justice. Playing with the queer potential of undoing norms they practice joyful accountability to matters of anti-racism, collaboration, Black Feminisms, instability and transformation. With Isabel Paehr as MELT, they queer knowledges from computation and chemistry to shift metaphors of melting in times of climate change. Britton is an Associate Lecturer in Queer Feminist Technoscience & Digital Design at i-DAT at the University of Plymouth, UK; and an artistic researcher on the interdisciplinary project ‘Re: Coding Algorithmic Culture’ within the Gender/Diversity in Informatics Systems Research Group at the University of Kassel, DE.
             </p>
             
-            <p class="references captioned" alt="References">
+            <div class="references captioned" alt="References">
                 <ul>
                     <li>http://meltionary.com/hackingconcrete/start.html</li>
                     <li>Maria :  Could you speak a bit more about your relationship to language? By manifesting accessibility within language (ie using the gender star asterisk) isn't there a risk of making the language itself inaccessible to wider audiences?</li>
@@ -165,7 +165,7 @@
                     <li>helenslug :  yes isi! and also concrete at different moments or concretising as a way to bring together different relations too</li>
                     <li>michael :  This was super refreshing and reaffirming! I hardly ever experience these conversations in this context and I'm really grateful for this discussion and for your facilitation, Loren (and Rosen)</li>
                 </ul>
-            </p>
+            </div>
 
             <p class="transcript captioned" alt="transcription">
                 Transcription
@@ -183,7 +183,8 @@
               let caption = captionTriggers[i].getAttribute('alt');
               captionTriggers[i].addEventListener('mouseover', () => {displayCaption(caption)}, false);
               captionTriggers[i].addEventListener('mouseout', () => {displayCaption('')}, false);
-              // captionTriggers[i].getAttribute('alt')
+              // captionTriggers[i].getAttribute('alt');
+              console.log(captionTriggers[i]);
             }
 
             function displayCaption(caption) {
