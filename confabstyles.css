@@ -17,6 +17,9 @@ a:hover {
     color: red;
 }
 
-.logos{
-    width: 50%;
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 10%;
 }
