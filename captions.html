@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>captions</title>
+  <style>
+    #caption {
+      font-size: 56px;
+      font-family: 'Arial', sans-serif;
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #0000ff;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Confabulations website made by <a href="#" class="captioned" alt="link to bjoerngiesecke.com">Björn Giesecke</a>, <a href="#" class="captioned" alt="link to paulabuskevica.com">Paula Buškevica</a> and <a href="#" class="captioned" alt="link to alejandroba.com">Alejandro Bellón Ample</a>
+  </p>
+  <div id="caption">
+    Caption example
+  </div>
+  <script>
+    let captionTriggers = document.getElementsByClassName('captioned');
+    let captionElement = document.getElementById('caption');
+
+    for (let i = 0; i < captionTriggers.length; i++) {
+      let caption = captionTriggers[i].getAttribute('alt');
+      captionTriggers[i].addEventListener('mouseover', () => {displayCaption(caption)}, false);
+      captionTriggers[i].addEventListener('mouseout', () => {displayCaption('')}, false);
+      // captionTriggers[i].getAttribute('alt')
+    }
+
+    function displayCaption(caption) {
+      captionElement.innerHTML = caption;
+    }
+  </script>
+</body>
+</html>
