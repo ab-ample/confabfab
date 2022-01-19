@@ -13,31 +13,6 @@ body {
     text-rendering: optimizeLegibility !important;
 }
 
-div {
-    transition: all .25s;
+a:hover {
+    color: red;
 }
-
-div:hover {
-    transition: all .25s;
-    transform: rotate3d(5,-6,0,35deg);
-}
-
-.flex {
-    display: flex;
-    flex: 1 auto;
-    flex-direction: row;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    padding: 22.5px;
-}
-
-.flex img {
-    width: auto;
-    /* height: 100%; */
-}
-
-/* section {
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-} */
