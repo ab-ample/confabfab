@@ -16,3 +16,7 @@ body {
 a:hover {
     color: red;
 }
+
+.logos{
+    width: 50%;
+}
