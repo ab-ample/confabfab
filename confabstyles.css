@@ -18,8 +18,9 @@ a:hover {
 }
 
 .logo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 10%;
+    width: 20%;
+    height: 20%;
+    padding: 8px;
+    display: infline-flex;
+    justify-content: center;
 }
