@@ -9,7 +9,12 @@
 
     <style>
         * {
-        box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Col-Regular';
+            src: url(assets/Col-1-Regular.woff);
         }
 
         body {
@@ -38,17 +43,16 @@
         }
 
         .talk-title {
-            font-size: 10vw;
+            font-family: 'Col-Regular';
+            font-size: 8vw;
+            line-height: 4vw;
+            text-align: center;
+            word-break: break-all;
         }
 
         .talk-time {
             font-size: large;
             font-style: italic;
-        }
-
-        .bio {
-            /* margin-left: 100px; */
-            /* font-size: smaller; */
         }
 
         ul, li {
@@ -72,12 +76,17 @@
 
 </head>
     <body>
-        <div class="menu">
+        <div class="menu captioned" alt="menu">
             <ul>
                 <li>Upcoming</li>
-                <li><a href="#">24 Mar 2021, 19h (EET) Collective Listening, Collective Dreaming, Amal Khalaf</a></li>
-                <li><a href="#">14 Mar 2021, 19h (EET) Beyond Inclusion: Disability in Life and Design, Bess Williamson</a></li>
-                
+                <li><a href="#">24 Mar 2021, 19h (EET) Collective Listening, Collective Dreaming, Amal Khalaf</a></li>        
+
+                <li>Season 2</li>
+                <li><a href="#">24 Mar 2021, 19h (EET) Fugitive Forms, Luisa Lorenza Corna</a></li>
+                <li><a href="#">24 Mar 2021, 19h (EET) Feeling out T*FTS (Trans*FeministTechnoScience), Loren Britton</a></li>
+                <li><a href="#">24 Mar 2021, 19h (EET) Between Text and Object: Reading the ‘Monstrous Birth’ Broadsides, Eli Cumings</a></li>
+                <li><a href="#">24 Mar 2021, 19h (EET) The World and Words Fuck Each Other, Nat Pyper</a></li>
+
                 <li>Season 1</li>
                 <li><a href="#">24 Mar 2021, 19h (EET) Fugitive Forms, Luisa Lorenza Corna</a></li>
                 <li><a href="#">12 May 2021, 19h (EET) A Wounded Fire: Queerness in Black Publications from the Harlem Renaissance, Silas Munro</a></li>
@@ -85,20 +94,13 @@
                 <li><a href="#">24 Mar 2021, 19h (EET) Collective Listening, Collective Dreaming, Amal Khalaf</a></li>
                 <li><a href="#">04 Mar 2021, 19h (EET) The Art of Activism: On Radical Practices of Solidarity in New York City’s Museums and Beyond…, Ayasha Guerin</a></li>
                 <li><a href="#">14 Mar 2021, 19h (EET) Beyond Inclusion: Disability in Life and Design, Bess Williamson</a></li>
-
-
-                <li>Season 2</li>
-                <li><a href="#">24 Mar 2021, 19h (EET) Fugitive Forms, Luisa Lorenza Corna</a></li>
-                <li><a href="#">24 Mar 2021, 19h (EET) Feeling out T*FTS (Trans*FeministTechnoScience), Loren Britton</a></li>
-                <li><a href="#">24 Mar 2021, 19h (EET) Between Text and Object: Reading the ‘Monstrous Birth’ Broadsides, Eli Cumings</a></li>
-                <li><a href="#">24 Mar 2021, 19h (EET) The World and Words Fuck Each Other, Nat Pyper</a></li>
             </ul>
         </div>
             
             <!-- Luisa Lorenza Corna -->
-
-            <div class="talk-title">Fugitive Forms, Luisa Lorenza Corna</div>
-            <div class="talk-time">24 Mar 2021, 19h (EET)</div>
+            
+            <div class="talk-title captioned" alt="title of the talk">Fugitive Forms, Luisa Lorenza Corna</div>
+            <div class="talk-time captioned" alt="24 Mar 2021, 19h (EET)">24 Mar 2021, 19h (EET)</div>
             
             <!-- video soon here -->
 
@@ -110,7 +112,7 @@
                 Luisa Lorenza Corna is an art and design historian teaching at Middlesex University. Her main areas of research are art, Marxism and feminism. She has written for various art and design magazines, amongst which Texte Zur Kunst, Art Monthly, Flash Art and Domus. She is completing an anthology of writings of the feminist art historian Carla Lonzi for Seagull. Her first monograph, tentatively titled Fugitivity and Militancy in Post-War Criticism, seeks to question the epistemological constraints of art history and academia, through recounting the lives and the works of a selection on critics that left the artworld in favour of direct political activity or independent pedagogical projects.
             </p>
             
-            <div class="references captioned" alt="References">
+            <div class="references captioned" alt="references">
                 <ul>
                     <li>Rosen : On Quitting by Keguro Macharia https://thenewinquiry.com/on-quitting/
                     <li>Rosen : The Undercommons: Fugitive Planning & Black Study by Fred Moten and Stefano Harney</li>
@@ -132,10 +134,10 @@
                 Transcription
             </p>
 
-            <!-- Loren Britton -->
+            <!-- Luisa Lorenza Corna -->
 
-            <div class="talk-title">Feeling out T*FTS (Trans*FeministTechnoScience), Loren Britton</div>
-            <div class="talk-time">07 Apr 2021, 19h (EET)</div>
+            <div class="talk-title captioned" alt="title of the talk">Feeling out T*FTS (Trans*FeministTechnoScience), Loren Britton</div>
+            <div class="talk-time captioned" alt="07 Apr 2021, 19h (EET)">07 Apr 2021, 19h (EET)</div>
             
             <!-- video soon here -->
 
@@ -143,11 +145,11 @@
                 Walking along a the uneven accountabilities of trans* feminist technoscience and critical pedagogy: Feeling out T*FTS (Trans*FeministTechnoScience) will be a lecture based in a not emerged (non-linear and between) timeline. Based in queer theory, trans* studies, feminist technoscience and disability justice the lecture will be a remixing of different theoretical texts and artistic and design projects that have impacted me as an artist and researcher. Feelings will be prioritised and omissions are promised.
             </p>                
 
-            <p class="bio captioned" alt="Biography of Luisa Lorenza Corna">
+            <p class="bio captioned" alt="biography of Luisa Lorenza Corna">
                 Loren Britton is an interdisciplinary artist and researcher tuning with practices of Critical Pedagogy, Trans*FeministTechnoScience and Disability Justice. Playing with the queer potential of undoing norms they practice joyful accountability to matters of anti-racism, collaboration, Black Feminisms, instability and transformation. With Isabel Paehr as MELT, they queer knowledges from computation and chemistry to shift metaphors of melting in times of climate change. Britton is an Associate Lecturer in Queer Feminist Technoscience & Digital Design at i-DAT at the University of Plymouth, UK; and an artistic researcher on the interdisciplinary project ‘Re: Coding Algorithmic Culture’ within the Gender/Diversity in Informatics Systems Research Group at the University of Kassel, DE.
             </p>
             
-            <div class="references captioned" alt="References">
+            <div class="references captioned" alt="references">
                 <ul>
                     <li>http://meltionary.com/hackingconcrete/start.html</li>
                     <li>Maria :  Could you speak a bit more about your relationship to language? By manifesting accessibility within language (ie using the gender star asterisk) isn't there a risk of making the language itself inaccessible to wider audiences?</li>
