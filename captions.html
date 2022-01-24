@@ -5,22 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>captions</title>
   <style>
+    *,
+    *:after,
+    *:before {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Optima', sans-serif;
+      margin: 0;
+    }
+
+    main {
+      margin: 16px;
+    }
+
+    .captioned {
+      cursor: help;
+    }
+
     #caption {
-      font-size: 56px;
-      font-family: 'Arial', sans-serif;
+      font-size: 96px;
+      font-family: 'Arial Narrow', sans-serif;
+      font-weight: 800;
       position: fixed;
-      bottom: 16px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #0000ff;
-      z-index: 99999;
+      bottom: 24px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: #00f;
+    }
+
+    header {
+      background: #fff;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0; /* required */
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      padding: 8px 16px;
+    }
+
+    #menu-full {
+      display: none;
+    }
+
+    #menu-mini {
+      background: #ff0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #menu-mini a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .action {
+      color: #f00;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      margin: 0 16px 144px 16px;
     }
   </style>
 </head>
 <body>
-  <p>
-    Confabulations website made by <a href="#" class="captioned" alt="Link to bjoerngiesecke.com">Björn Giesecke</a>, <a href="#" class="captioned" alt="Link to paulabuskevica.com">Paula Buškevica</a> and <a href="#" class="captioned" alt="Link to alejandroba.com">Alejandro Bellón Ample</a>
-  </p>
+  <header>
+    <nav>
+      <ul id="menu-full" class="menu">
+        <li>Upcoming</li>
+        <li><a href="#">24 Mar 2021, 19h (EET) Collective Listening, Collective Dreaming, Amal Khalaf</a></li>
+        <li><a href="#">14 Mar 2021, 19h (EET) Beyond Inclusion: Disability in Life and Design, Bess Williamson</a></li>
+        <li>Season 1</li>
+        <li><a href="#">24 Mar 2021, 19h (EET) Fugitive Forms, Luisa Lorenza Corna</a></li>
+        <li><a href="#">12 May 2021, 19h (EET) A Wounded Fire: Queerness in Black Publications from the Harlem Renaissance, Silas Munro</a></li>
+        <li><a href="#">24 May 2021, 19h (EET) Standing on Both Shores At Once: Designers, Shapeshifters and Decolonial Futurities, Luiza Prado de O. Martins</a></li>
+        <li><a href="#">24 Mar 2021, 19h (EET) Collective Listening, Collective Dreaming, Amal Khalaf</a></li>
+        <li><a href="#">04 Mar 2021, 19h (EET) The Art of Activism: On Radical Practices of Solidarity in New York City’s Museums and Beyond…, Ayasha Guerin</a></li>
+        <li><a href="#">14 Mar 2021, 19h (EET) Beyond Inclusion: Disability in Life and Design, Bess Williamson</a></li>
+        <li>Season 2</li>
+        <li><a href="#">24 Mar 2021, 19h (EET) Fugitive Forms, Luisa Lorenza Corna</a></li>
+        <li><a href="#">24 Mar 2021, 19h (EET) Feeling out T*FTS (Trans*FeministTechnoScience), Loren Britton</a></li>
+        <li><a href="#">24 Mar 2021, 19h (EET) Between Text and Object: Reading the ‘Monstrous Birth’ Broadsides, Eli Cumings</a></li>
+        <li><a href="#">24 Mar 2021, 19h (EET) The World and Words Fuck Each Other, Nat Pyper</a></li>
+      </ul>
+      <ul id="menu-mini" class="menu">
+        <li><a href="#">Collective Listening, Collective Dreaming, Amal Khalaf</a></li>
+        <li class="action">08:03:10</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- talk -->
+    <article>
+      <h2 class="captioned" alt="24 Mar 2021, 19h (EET)">Fugitive Forms</h2>
+      <h3>Luisa Lorenza Corna</h3>
+      <p>
+        Taking the lead from Fred Moten and Harney’s criticism of academia and call for dissident forms of knowledge production, this presentation will explore the lives and the work of a group of 20th century figures that enacted forms of fugitivity avant-la-lettre. We will adopt a notion of fugitivity intended both as a breaching of the institutional frame, as well as a desire to trespass the boundaries between theory and practice, different media, literary genres and ultimately art and politics. We will first examine how critic Carla Lonzi’s decision to leave the artworld and embrace separatist feminism, was paralleled by a transfiguration of her mode of writing, aimed at challenging the artifice of language. We will then move to the erratic literary production of 70s gay activist Mario Mieli, which we will examine in light of his political attempt to replace identity with a world of erotic abundance.
+      </p>
+      <p>
+        Luisa Lorenza Corna is an art and design historian teaching at Middlesex University. Her main areas of research are art, Marxism and feminism. She has written for various art and design magazines, amongst which Texte Zur Kunst, Art Monthly, Flash Art and Domus. She is completing an anthology of writings of the feminist art historian Carla Lonzi for Seagull. Her first monograph, tentatively titled Fugitivity and Militancy in Post-War Criticism, seeks to question the epistemological constraints of art history and academia, through recounting the lives and the works of a selection on critics that left the artworld in favour of direct political activity or independent pedagogical projects. 
+      </p>
+    </article>
+    <!-- talk -->
+    <article>
+      <h2 class="captioned" alt="07 Apr 2021, 19h (EET)">Feeling out T*FTS (Trans*FeministTechnoScience)</h2>
+      <h3>Loren Britton</h3>
+      <p>
+        Walking along a the uneven accountabilities of trans* feminist technoscience and critical pedagogy: Feeling out T*FTS (Trans*FeministTechnoScience) will be a lecture based in a not emerged (non-linear and between) timeline. Based in queer theory, trans* studies, feminist technoscience and disability justice the lecture will be a remixing of different theoretical texts and artistic and design projects that have impacted me as an artist and researcher. Feelings will be prioritised and omissions are promised.
+      </p>
+      <p>
+        Loren Britton is an interdisciplinary artist and researcher tuning with practices of Critical Pedagogy, Trans*FeministTechnoScience and Disability Justice. Playing with the queer potential of undoing norms they practice joyful accountability to matters of anti-racism, collaboration, Black Feminisms, instability and transformation. With Isabel Paehr as MELT, they queer knowledges from computation and chemistry to shift metaphors of melting in times of climate change. Britton is an Associate Lecturer in Queer Feminist Technoscience & Digital Design at i-DAT at the University of Plymouth, UK; and an artistic researcher on the interdisciplinary project ‘Re: Coding Algorithmic Culture’ within the Gender/Diversity in Informatics Systems Research Group at the University of Kassel, DE.
+      </p>
+    </article>
+    <!-- talk -->
+    <article>
+      <h2 class="captioned" alt="21 Apr 2021, 19h (EET)">Between Text and Object: Reading the ‘Monstrous Birth’ Broadsides</h2>
+      <h3>Eli Cumings</h3>
+      <p>
+        In sixteenth-century Europe, interest in so-called ‘monstrous births’ was rife. Infants with congenital abnormalities were displayed at fairs, outside churches and in their homes. The causes of their physical deviance were considered in medical and ethnographical works, as well as sermons, autobiographies, and a host of other texts. The tradition of interpreting infants in this way was, of course, not new. But in the early modern period, the discourse entered print for the first time.
+        In this lecture I will reflect upon the consequences of this material fact, focussing my discussion on a small group of ‘broadsides’: cheap, mass-produced, single-sheet texts which were intended for a general readership. How did these texts articulate and transmit ideologies of bodily difference? What was the relationship between their form and content? How did they shape public notions of normalcy and deviance? 
+      </p>
+      <p>
+        Eli Cumings is a doctoral researcher at the University of Cambridge. Her work explores the representation of bodily difference in the textual culture of the Protestant Reformation, using the notion of ‘monstrosity’ as the point of departure. She is currently based in Berlin, where she will shortly begin a DAAD-funded research project.
+      </p>
+    </article>
+  </main>
+  <footer>
+    <p>
+      Confabulations website made by <a href="#" class="captioned" alt="Link to bjoerngiesecke.com">Björn Giesecke</a>, <a href="#" class="captioned" alt="Link to paulabuskevica.com">Paula Buškevica</a> and <a href="#" class="captioned" alt="Link to alejandroba.com">Alejandro Bellón Ample</a>
+    </p>
+  </footer>
+  <!-- add more functionalities -->
   <div id="caption">
     <!-- captions displayed here -->
   </div>
@@ -38,6 +171,16 @@
     function displayCaption(caption) {
       captionElement.innerHTML = caption;
     }
+
+    document.getElementById('menu-mini').addEventListener('mouseover', function(e) {
+      this.style.display = 'none';
+      document.getElementById('menu-full').style.display = 'block';
+    }, false);
+
+    document.getElementById('menu-full').addEventListener('mouseout', function(e) {
+      this.style.display = 'none';
+      document.getElementById('menu-mini').style.display = 'flex';
+    }, false);
   </script>
 </body>
 </html>
