@@ -27,7 +27,8 @@
     }
 
     main {
-      margin: 16px;
+      margin: 16px auto;
+      max-width: 960px;
     }
 
     .captioned {
@@ -43,8 +44,9 @@
       left: 0;
       width: 100%;
       text-align: center;
-      color: #fff;
-      mix-blend-mode: difference;
+      /*color: #fff;
+      mix-blend-mode: difference;*/
+      color: #000;
     }
 
     header {
@@ -53,8 +55,11 @@
 
     .menu {
       list-style: none;
-      padding: 0;
-      margin: 0;
+      margin: 0 auto;
+      max-width: 960px;
+    }
+
+    .menu li {
       padding: 8px 16px;
     }
 
@@ -77,11 +82,12 @@
     }
 
     .action {
-      color: #f00;
+      color: #fff;
+      background: #000;
     }
 
     h2, h3 {
-      text-align: center;
+      /*text-align: center;*/
     }
 
     h2 {
@@ -117,17 +123,24 @@
       height: 180px;
       background: #000;
       position: fixed;
-      bottom: 16px;
-      right: 16px;
+      top: 52px;
+      left: 16px;
+    }
+
+    .transcription {
+      max-width: 640px;
+      font-size: 14px;
+      margin-left: auto;
+      padding: 16px;
+      background: #000;
+      color: #fff;
     }
 
     .transcription img {
       display: block;
       margin: 0 auto;
-    }
-
-    .transcription-content {
-      display: none;
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -139,7 +152,7 @@
   <div id="stream">
     <div id="screen"></div>
   </div>
-  <div id="mini-screen"></div>
+  <!-- <div id="mini-screen"></div> -->
   <header name="top">
     <nav>
       <ul id="menu-full" class="menu">
@@ -267,22 +280,6 @@
 
     function displayCaption(caption) {
       captionElement.innerHTML = caption;
-    }
-
-    let transcriptions = document.getElementsByClassName('transcription');
-
-    function displayTranscription(e) {
-      let transcription = e.target;
-      for (let i = 0; i < transcription.parentNode.childNodes.length; i++) {
-        console.log(transcription.parentNode.childNodes[i]);
-        if (transcription.parentNode.childNodes[i].className == 'transcription-content') {
-          transcription.parentNode.childNodes[i].style.display = 'block';
-        }
-      }
-    }
-
-    for (let i = 0; i < transcriptions.length; i++) {
-      transcriptions[i].addEventListener('click', displayTranscription, false)
     }
   </script>
 </body>
