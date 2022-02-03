@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>captions</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <style>
     *,
     *:after,
@@ -14,6 +15,15 @@
     body {
       font-family: 'Optima', sans-serif;
       margin: 0;
+      background: #fff;
+    }
+
+    a {
+      text-decoration-style: dotted;
+    }
+
+    a:visited {
+      color: #00f;
     }
 
     main {
@@ -26,21 +36,19 @@
 
     #caption {
       font-size: 96px;
-      font-family: 'Arial Narrow', sans-serif;
-      font-weight: 800;
+      font-family: 'Helvetica', sans-serif;
+      font-weight: 200;
       position: fixed;
       bottom: 24px;
       left: 0;
       width: 100%;
       text-align: center;
-      color: #00f;
+      color: #fff;
+      mix-blend-mode: difference;
     }
 
     header {
       background: #fff;
-      position: sticky;
-      position: -webkit-sticky;
-      top: 0; /* required */
     }
 
     .menu {
@@ -54,14 +62,16 @@
       /*display: none;*/
     }
 
-    #menu-mini {
+    #announcement {
       background: #eee;
-      /*display: flex;*/
-      display: none;
+      display: flex;
       justify-content: space-between;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0; /* required */
     }
 
-    #menu-mini a {
+    #announcement a {
       color: #000;
       text-decoration: none;
     }
@@ -86,14 +96,51 @@
       margin: 0 16px 144px 16px;
     }
 
-    p:hover {
-      background: lightgrey;
-      border-radius: 0.5em;
+    .captioned:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    #stream {
+      padding: 16px;
+    }
+
+    #screen {
+      width: 1280px;
+      height: 720px;
+      margin: 0 auto;
+      background: #000;
+    }
+
+    #mini-screen {
+      width: 320px;
+      height: 180px;
+      background: #000;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+    }
+
+    .transcription img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .transcription-content {
+      display: none;
     }
   </style>
 </head>
 <body>
-  <header>
+  <ul id="announcement" class="menu">
+    <li><a href="#">Collective Listening, Collective Dreaming, Amal Khalaf</a></li>
+    <li class="action">08:03:10</li>
+  </ul>
+  <div id="stream">
+    <div id="screen"></div>
+  </div>
+  <div id="mini-screen"></div>
+  <header name="top">
     <nav>
       <ul id="menu-full" class="menu">
         <li>Upcoming</li>
@@ -112,10 +159,6 @@
         <li><a href="#">24 Mar 2021, 19h (EET) Between Text and Object: Reading the ‘Monstrous Birth’ Broadsides, Eli Cumings</a></li>
         <li><a href="#">24 Mar 2021, 19h (EET) The World and Words Fuck Each Other, Nat Pyper</a></li>
       </ul>
-      <ul id="menu-mini" class="menu">
-        <li><a href="#">Collective Listening, Collective Dreaming, Amal Khalaf</a></li>
-        <li class="action">08:03:10</li>
-      </ul>
     </nav>
   </header>
   <main>
@@ -123,12 +166,24 @@
     <article>
       <h2 class="captioned" alt="24 Mar 2021, 19h (EET)">Fugitive Forms</h2>
       <h3>Luisa Lorenza Corna</h3>
-      <p>
+      <p class="captioned" alt="description text">
         Taking the lead from Fred Moten and Harney’s criticism of academia and call for dissident forms of knowledge production, this presentation will explore the lives and the work of a group of 20th century figures that enacted forms of fugitivity avant-la-lettre. We will adopt a notion of fugitivity intended both as a breaching of the institutional frame, as well as a desire to trespass the boundaries between theory and practice, different media, literary genres and ultimately art and politics. We will first examine how critic Carla Lonzi’s decision to leave the artworld and embrace separatist feminism, was paralleled by a transfiguration of her mode of writing, aimed at challenging the artifice of language. We will then move to the erratic literary production of 70s gay activist Mario Mieli, which we will examine in light of his political attempt to replace identity with a world of erotic abundance.
       </p>
       <p>
         Luisa Lorenza Corna is an art and design historian teaching at Middlesex University. Her main areas of research are art, Marxism and feminism. She has written for various art and design magazines, amongst which Texte Zur Kunst, Art Monthly, Flash Art and Domus. She is completing an anthology of writings of the feminist art historian Carla Lonzi for Seagull. Her first monograph, tentatively titled Fugitivity and Militancy in Post-War Criticism, seeks to question the epistemological constraints of art history and academia, through recounting the lives and the works of a selection on critics that left the artworld in favour of direct political activity or independent pedagogical projects. 
       </p>
+      <div class="transcription">
+        <p>> Transcriptions</p>
+        <div class="transcription-content">
+          <p>
+            <strong>Safiya Noble:</strong> Thank you Roderic for that lovely invitation. You all really scored when you got him to come and be part of your team here. We miss him in LA, and he was a favorite of ours at UCLA, so really happy for you to be here. And so pleased to join you this afternoon and to be competing with not just the beautiful sunny, hot, winter day, which still is amazing to me after having spent thirteen years at the University of Illinois in Illinois, to come home and really enjoy my life thoroughly with these days.
+          </p>
+          <p>
+            So thanks for having me. I thought today I would talk a bit about the forthcoming book, Algorithms of Oppression, and then also maybe leave a little bit of space for us to dialogue. So I’m going to move fairly quickly through some of this, just so that we have enough time to also stay engaged in conversation. I’m going to set even a timer for myself to warn me that we’re just about out of time. Alright.
+          </p>
+          <img src="http://opentranscripts.org/wp-content/uploads/2018/02/safiya-noble-algorithms-oppresion-007.png" class="captioned" alt="image of algorithms">
+        </div>
+      </div>
     </article>
     <!-- talk -->
     <article>
@@ -214,15 +269,21 @@
       captionElement.innerHTML = caption;
     }
 
-    document.getElementById('menu-mini').addEventListener('mouseover', function(e) {
-      this.style.display = 'none';
-      document.getElementById('menu-full').style.display = 'block';
-    }, false);
+    let transcriptions = document.getElementsByClassName('transcription');
 
-    document.getElementById('menu-full').addEventListener('mouseout', function(e) {
-      this.style.display = 'none';
-      document.getElementById('menu-mini').style.display = 'flex';
-    }, false);
+    function displayTranscription(e) {
+      let transcription = e.target;
+      for (let i = 0; i < transcription.parentNode.childNodes.length; i++) {
+        console.log(transcription.parentNode.childNodes[i]);
+        if (transcription.parentNode.childNodes[i].className == 'transcription-content') {
+          transcription.parentNode.childNodes[i].style.display = 'block';
+        }
+      }
+    }
+
+    for (let i = 0; i < transcriptions.length; i++) {
+      transcriptions[i].addEventListener('click', displayTranscription, false)
+    }
   </script>
 </body>
 </html>
