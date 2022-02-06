@@ -18,13 +18,18 @@
       max-width: 960px;
     }
 
-    .captioned {
+    /* .captioned {
       cursor: help;
+    } */
+
+    .captioned:hover {
+      background: lightgoldenrodyellow;
+      color: black;
     }
 
     #caption {
       font-size: 96px;
-      font-family: 'Helvetica', sans-serif;
+      font-family: Times, sans-serif;
       font-weight: 200;
       position: fixed;
       bottom: 24px;
@@ -33,7 +38,13 @@
       text-align: center;
       /*color: #fff;
       mix-blend-mode: difference;*/
-      color: #000;
+      /* color: #000; */
+      color: #fff;
+      text-shadow:
+      -1px -1px 0 #00f,
+      1px -1px 0 #00f,
+      -1px 1px 0 #00f,
+      1px 1px 0 #00f;  
     }
 
     header {
@@ -78,11 +89,6 @@
 
     footer {
       margin: 0 16px 144px 0;
-    }
-
-    .captioned:hover {
-      background: #000;
-      color: #fff;
     }
 
     #stream {
