@@ -39,7 +39,7 @@ header:hover {
 }
 
 .clock img {
-	height: 90vh;
+	height: 88vh;
 }
 
 .clock img:hover {
@@ -84,11 +84,18 @@ h4 {
 
 h3 {
 	/*font-family: 'Routed Gothic';*/
+	font-family: 'Arial', sans-serif;
 	font-size: 96px;
+	font-weight: bold;
 }
 
 article {
 	margin-bottom: 72px;
+}
+
+.highlight {
+	background: black;
+	color: white;
 }
 
 .description,
@@ -108,9 +115,45 @@ article {
 	left: 0;
 	width: 100%;
 	text-align: center;
-	font-family: 'Routed Gothic';
-	font-size: 96px;
-	color: white;
-	mix-blend-mode: difference;
+	/*font-family: 'Routed Gothic';*/
+	font-family: 'Arial', sans-serif;
+	font-weight: lighter;
+	font-size: 72px;
+	color: #0f0;
+	/*mix-blend-mode: difference;*/
 	pointer-events: none;
+}
+
+/* footer */
+.columns {
+	display: flex;
+	gap: 8px;
+}
+
+.mediumcolumn {
+	width: 50%;
+}
+
+footer a {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+
+@media (max-width: 600px) {
+	header {
+		margin-right: 8px;
+	}
+
+  h3 {
+		font-size: 48px;¡
+	}
+
+	.columns {
+		display: block;
+	}
+
+	.mediumcolumn {
+		width: 100%;
+	}
 }
