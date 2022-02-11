@@ -1,22 +1,39 @@
-:root {
-	--minimap-size: 256px;
+@font-face {
+	font-family: 'Routed Gothic';
+	src: url('../fonts/routed-gothic.ttf');
+}
+
+@keyframes clock {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
 }
 
 body {
 	font-family: 'Optima', sans-serif;
-	margin: 0;
+	background: white;
 }
 
-ul {
-	list-style: none;
-	padding: 0;
-}
-
-#website {
-	/*margin-right: var(--minimap-size);*/
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 /* header  */
+header {
+	position: fixed;
+	top: 8px;
+	left: 8px;
+	opacity: 0.25;
+	z-index: 999;
+}
+
+header:hover {
+	opacity: 1;
+}
+
 .clock {
 	text-align: center;
 }
@@ -25,14 +42,75 @@ ul {
 	height: 90vh;
 }
 
-/* minimap */
+.clock img:hover {
+	animation: clock 16s infinite linear;
+}
 
-#minimap {
+/*table, 
+th, 
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}*/
+
+th {
+	text-align: left;
+	font-weight: normal;
+}
+
+td {
+	background: grey;
+	color: white;
+}
+
+td:hover {
+	background: black;
+	color: white;
+}
+
+.soon {
+	background: yellow;
+	color: red;
+}
+
+/* lectures  */
+h2,
+h3,
+h4 {
+	font-weight: normal;
+	margin: 0;
+	text-align: center;
+}
+
+h3 {
+	/*font-family: 'Routed Gothic';*/
+	font-size: 96px;
+}
+
+article {
+	margin-bottom: 72px;
+}
+
+.description,
+.bio {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+/* caption */
+.captioned {
+	cursor: help;
+}
+
+#caption {
 	position: fixed;
-	top: 0;
-	right: 0;
-	width: var(--minimap-size);
-	height: 100vh;
-	border-left: 1px solid #ccc;
-	overflow: scroll;
+	bottom: 16px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Routed Gothic';
+	font-size: 96px;
+	color: white;
+	mix-blend-mode: difference;
+	pointer-events: none;
 }
