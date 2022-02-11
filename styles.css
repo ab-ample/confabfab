@@ -15,8 +15,22 @@
       background: #fff;
     }
 
+    .grid-container {
+      display: flex;
+
+    }
+
     a {
-      text-decoration-style: dotted;
+      text-decoration: none;
+      background-color: grey;
+      color: white;
+      padding-left: 0.1em;
+      padding-right: 0.1em;
+    }
+
+    a:hover {
+      text-decoration: none;
+      background-color: #000;
     }
 
     main {
@@ -25,9 +39,8 @@
     }
 
     .title {
-      font-family: 'Col', 'Optima', Times Serif;
       text-align: center;
-      font-size: 15vw;
+      font-size: 9vw;
       line-height: 9vw;
       font-weight: 100;
       margin: 0;
@@ -36,6 +49,10 @@
 
     .speaker {
       text-align: center;
+    }
+
+    .videoimg {
+      width: 100%;
     }
 
     .season-one {
