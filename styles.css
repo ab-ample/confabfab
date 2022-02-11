@@ -4,6 +4,12 @@
       box-sizing: border-box;
     }
 
+    @font-face {
+      font-family: "Col";
+      src: url("/assets/fonts/Col-1-Regular.woff2") format("woff2"),
+           url("/assets/fonts/Col-1-Regular.woff") format("woff");
+    }
+
     body {
       font-family: 'Optima', sans-serif;
       background: #fff;
@@ -14,37 +20,59 @@
     }
 
     main {
-      margin: 16px 0;
-      max-width: 960px;
+      margin: 0 5vw auto;
+      /* max-width: 960px; */
     }
 
-    /* .captioned {
-      cursor: help;
-    } */
+    .title {
+      font-family: 'Col', 'Optima', Times Serif;
+      text-align: center;
+      font-size: 15vw;
+      line-height: 9vw;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+    }
+
+    .speaker {
+      text-align: center;
+    }
+
+    .season-one {
+      background-color: lavender;
+    }
+
+    .season-two {
+      background-color: lightcoral;
+    }
 
     .captioned:hover {
-      background: lightgoldenrodyellow;
+      background: yellow;
       color: black;
     }
 
     #caption {
       font-size: 96px;
-      font-family: Times, sans-serif;
-      font-weight: 200;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      letter-spacing: -0.03em;
       position: fixed;
-      bottom: 24px;
+      bottom: 30px;
       left: 0;
       width: 100%;
       text-align: center;
-      /*color: #fff;
-      mix-blend-mode: difference;*/
-      /* color: #000; */
-      color: #fff;
-      text-shadow:
+      /* mix-blend-mode: difference; */
+      color: rgb(0, 255, 0);
+      /* text-shadow:
       -1px -1px 0 #00f,
       1px -1px 0 #00f,
       -1px 1px 0 #00f,
-      1px 1px 0 #00f;  
+      1px 1px 0 #00f;   */
+    }
+
+    .confabimg {
+      position: fixed;
+      mix-blend-mode: multiply;
+      width: 50vw;
     }
 
     header {
