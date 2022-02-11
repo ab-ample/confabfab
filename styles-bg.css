@@ -120,6 +120,208 @@
     footer {
       margin: 0 16px 144px 0;
     }
+    *,
+    *:after,
+    *:before {
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "Col";
+      src: url("/assets/fonts/Col-1-Regular.woff2") format("woff2"),
+           url("/assets/fonts/Col-1-Regular.woff") format("woff");
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Optima', sans-serif;
+      background: #fff;
+    }
+
+    .grid-container {
+      margin: 2em;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      column-gap: 2em;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: grey;
+      color: white;
+      padding-left: 0.1em;
+      padding-right: 0.1em;
+    }
+
+    a:hover {
+      text-decoration: none;
+      background-color: #000;
+    }
+
+    main {
+      margin: 0 auto;
+      /* max-width: 960px; */
+    }
+
+    .miniture {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 8vw;
+      line-height: 8vw;
+      font-weight: 100;
+      margin: 3vw 0 0 0;
+      padding: 0;
+      word-break: break-all;
+      background-color: antiquewhite;
+      border-radius: 0.3em;
+    }
+
+    .speaker {
+      text-align: center;
+    }
+
+    .videoimg {
+      width: 100%;
+    }
+
+    .season-one {
+      background-color: lavender;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 14vw;
+    }
+
+    .season-two {
+      background-color: lightcoral;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 14vw;
+    }
+
+    .captioned:hover {
+      background: yellow;
+      color: black;
+    }
+
+    #caption {
+      font-size: 96px;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      letter-spacing: -0.03em;
+      position: fixed;
+      bottom: 30px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      /* mix-blend-mode: difference; */
+      color: rgb(0, 255, 0);
+      /* text-shadow:
+      -1px -1px 0 #00f,
+      1px -1px 0 #00f,
+      -1px 1px 0 #00f,
+      1px 1px 0 #00f;   */
+    }
+
+    .confabimg {
+      position: fixed;
+      mix-blend-mode: multiply;
+      width: 60vw;
+      top: 20px;
+    }
+
+    .confabimg-small {
+      mix-blend-mode: multiply;
+      width: 100%;
+    }
+
+    header {
+      background: #fff;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0.5em;
+    }
+
+    #menu-full {
+      /*display: none;*/
+    }
+
+    #announcement {
+      background: rgb(99, 120, 255);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0; /* required */
+    }
+
+    .action {
+      color: #fff;
+    }
+
+    h2, h3 {
+      /*text-align: center;*/
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      margin: 0 16px 144px 0;
+    }
+
+    #stream {
+      padding: 16px;
+    }
+
+    #screen {
+      max-width: 1280px;
+      max-height: 720px;
+      margin: 0 auto;
+      background: #000;
+    }
+
+    #mini-screen {
+      width: 320px;
+      height: 180px;
+      background: #000;
+      position: fixed;
+      top: 52px;
+      left: 16px;
+    }
+
+    .transcription {
+      max-width: 640px;
+      font-size: 14px;
+      padding: 16px;
+      border: 1px dotted #000;
+    }
+
+    .transcription img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+    }
+
+    .logo{
+    width: 20%;
+    height: 20%;
+    padding: 8px;
+    display: infline-flex;
+    justify-content: center;
+}
 
     #stream {
       padding: 16px;
