@@ -207,3 +207,12 @@ padding: 8px;
 display: infline-flex;
 justify-content: center;
 }
+
+.clock {
+  text-align: center;
+}
+
+.clock > img{
+  height: 100vh;
+  width: auto;
+}
