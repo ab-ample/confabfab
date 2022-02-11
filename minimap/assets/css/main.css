@@ -1,0 +1,38 @@
+:root {
+	--minimap-size: 256px;
+}
+
+body {
+	font-family: 'Optima', sans-serif;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+#website {
+	/*margin-right: var(--minimap-size);*/
+}
+
+/* header  */
+.clock {
+	text-align: center;
+}
+
+.clock img {
+	height: 90vh;
+}
+
+/* minimap */
+
+#minimap {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: var(--minimap-size);
+	height: 100vh;
+	border-left: 1px solid #ccc;
+	overflow: scroll;
+}
