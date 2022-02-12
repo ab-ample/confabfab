@@ -21,6 +21,12 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	background: black;
+	color: white;
+	text-decoration: none;
+}
+
 /* header  */
 header {
 	position: fixed;
@@ -83,8 +89,6 @@ h4 {
 }
 
 h3 {
-	/*font-family: 'Routed Gothic';*/
-	font-family: 'Arial', sans-serif;
 	font-size: 96px;
 	font-weight: bold;
 }
