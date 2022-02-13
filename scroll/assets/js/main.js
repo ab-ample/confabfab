@@ -15,7 +15,7 @@ function displayCaption(caption) {
 let backtomenuElement = document.getElementById("backtomenu");
 
 function scrollToShow() {
-  backtomenuElement.style.transform = "rotate("+(window.pageYOffset/8)+"deg)";
+  backtomenuElement.style.transform = "rotate3d(0, 0, 1, "+(window.pageYOffset/8)+"deg)";
   let y = window.scrollY;
   if (y >= 800) {
     backtomenuElement.style.display = "block"
