@@ -24,11 +24,14 @@ html {
 }
 
 body {
-	font-family: 'Optima', sans-serif;
-	font-size: 1.25em;
+	/*font-family: 'Optima', sans-serif;*/
+	font-family: 'Arial', sans-serif;
+	/*font-size: 1.25em;*/
+	font-size: 1.5em;
 	letter-spacing: 0.005em;
 	line-height: 1.5em;
-	background: #E5E3DF;
+	background: white;
+	/*background: #E5E3DF;*/
 }
 
 a {
@@ -42,16 +45,12 @@ header {
 	top: 8px;
 	left: 8px;
 	opacity: 0.25;*/
-	font-size: 0.75em;
-	line-height: 1.25em;
+	font-size: 0.8em;
+	line-height: 1.4em;
 }
 
 header:hover {
 	/*opacity: 1;*/
-}
-
-nav a {
-	text-decoration: none;
 }
 
 #backtomenu {
@@ -64,6 +63,11 @@ nav a {
 
 #backtomenu a {
 	text-decoration: none;
+}
+
+#backtomenu img {
+	width: 120px;
+	height: auto;
 }
 
 /* takeover */
@@ -95,32 +99,53 @@ td {
   border-collapse: collapse;
 }*/
 
+table {
+	border: 1px inset black;
+}
+
+th,
+td {
+	border: 1px inset black;
+}
+
 th {
 	text-align: left;
-	font-weight: normal;
+	font-weight: normal;	
+	color: red;
 }
 
-td {
+/*td {
 	background: white;
 	color: black;
-}
-
-td:hover {
-	background: black;
-	color: white;
-}
+}*/
 
 .soon {
-	background: blue;
-	color: white;
+	background: #FF9966;
+}
+
+.season1 {
+	background: #FFFF00;
+}
+
+.season2 {
+	background: #66FFCC;
+}
+
+.season3 {
+	background: #33FFFF;
 }
 
 /* lectures  */
 section {
+	margin-top: 1em;
+}
+
+hr {
+	border: 1px inset #ddd;
 	margin-top: 2em;
 }
 
-#season3{
+/*#season3{
 	color: #000;
 }
 
@@ -130,19 +155,20 @@ section {
 
 #season1{
 	color: #000;
-}
+}*/
 
 h2,
 h3,
 h4,
 h5 {
+	font-size: 1em;
 	font-weight: normal;
 	margin: 0;
-	text-align: center;
 }
 
 h2 {
-	font-size: 1em;
+	text-align: center;
+	color: red;
 }
 
 h2, h5 {
@@ -150,18 +176,12 @@ h2, h5 {
 }
 
 h3 {
-	font-size: 3.5em;
-	line-height: 1.15em;
 	font-weight: bold;
 }
 
 h4 {
 	font-size: 1em;
 	text-transform: uppercase;
-}
-
-h5 {
-	font-size: 0.85em;
 }
 
 article {
@@ -175,8 +195,17 @@ article {
 
 .description,
 .biography {
-	margin-left: 15%;
-	margin-right: 15%;
+	/*margin-right: 30%;*/
+}
+
+.gallery {
+	display: flex;
+	justify-content: left;
+	margin: 16px 0;
+}
+
+.gallery img {
+	max-width: 220px;
 }
 
 /* caption */
@@ -186,24 +215,25 @@ article {
 
 #caption {
 	position: fixed;
-	bottom: 16px;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	text-align: center;
 	/*font-family: 'Routed Gothic';*/
 	font-family: 'Arial', sans-serif;
 	font-weight: lighter;
-	font-size: 96px;
-	line-height: 96px;
-	color: #0f0;
-	/*mix-blend-mode: difference;*/
+	font-size: 2em;
+	line-height: 1.5em;
+	color: black;
+	background: #FFFF00;
 	pointer-events: none;
 }
 
 /* footer */
 footer {
-	/*font-size: 0.75em;
-	line-height: 1.35em;*/
+	font-size: 0.80em;
+	line-height: 1.4em;
+	color: red;
 }
 
 .columns {
