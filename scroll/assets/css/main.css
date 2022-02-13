@@ -86,7 +86,7 @@ h1 {
 
 .takeover img {
 	max-height: calc(100vh - 16px);
-	width: 100%;
+	max-width: 100%;
 }
 
 .takeover img:hover {
