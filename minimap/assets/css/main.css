@@ -11,12 +11,17 @@
 	}
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Optima', sans-serif;
 	font-size: 1.25em;
 	letter-spacing: 0.005em;
 	line-height: 1.5em;
-	background: #E5E3DF;
+	/*background: #E5E3DF;*/
+	background: silver;
 }
 
 a {
@@ -25,16 +30,17 @@ a {
 
 /* header */
 header {
-	position: fixed;
+	margin-top: 2em;
+/*	position: fixed;
 	top: 8px;
 	left: 8px;
-	opacity: 0.25;
+	opacity: 0.25;*/
 	font-size: 0.75em;
 	line-height: 1.25em;
 }
 
 header:hover {
-	opacity: 1;
+	/*opacity: 1;*/
 }
 
 nav a {
@@ -75,7 +81,7 @@ th {
 }
 
 td {
-	background: lightgrey;
+	background: white;
 	color: black;
 }
 
@@ -109,7 +115,7 @@ h2, h5 {
 }
 
 h3 {
-	font-size: 4.5em;
+	font-size: 3.5em;
 	line-height: 1.15em;
 	font-weight: bold;
 }
@@ -124,12 +130,12 @@ article {
 }
 
 .highlight {
-	/*background: black;
-	color: #E5E3DF;*/
+	/*background: white;
+	color: blue;*/
 }
 
 .description,
-.bio {
+.biography {
 	margin-left: 15%;
 	margin-right: 15%;
 }
@@ -157,8 +163,8 @@ article {
 /* footer */
 footer {
 	color: blue;
-	font-size: 0.75em;
-	line-height: 1.35em;
+	/*font-size: 0.75em;
+	line-height: 1.35em;*/
 }
 
 .columns {
@@ -171,22 +177,22 @@ footer {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
 	header {
 		margin-right: 8px;
 	}
 
-	/*h2 {
-		font-size: 24px;
+	h3 {
+		font-size: 2em;
+		line-height: 1.15em;
+		font-weight: bold;
 	}
 
-  h3 {
-		font-size: 48px;¡
+	.description,
+	.biography {
+		margin-left: 0;
+		margin-right: 0;
 	}
-
-	h4 {
-		font-size: 16px;
-	}*/
 
 	.columns {
 		display: block;
@@ -194,5 +200,10 @@ footer {
 
 	.mediumcolumn {
 		width: 100%;
+	}
+
+	footer {
+		font-size: 0.75em;
+		line-height: 1.5em;
 	}
 }
