@@ -24,4 +24,6 @@ function scrollToShow() {
   }
 };
 
-window.addEventListener("scroll", scrollToShow);
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  window.addEventListener("scroll", scrollToShow); 
+}
