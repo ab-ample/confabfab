@@ -128,7 +128,7 @@ h1 {
 	font-size: 0.80em;
 	line-height: 1.4em;
 	color: white;
-	/*mix-blend-mode: difference;*/
+	mix-blend-mode: difference;
 }
 
 /* lectures  */
