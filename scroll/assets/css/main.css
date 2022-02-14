@@ -104,18 +104,20 @@ h1 {
 }
 
 .takeover {
-	max-height: calc(100vh - 16px);
-	text-align: center;
 	background: white;
 }
 
+.clock {
+	max-height: calc(100vh - 16px);
+	text-align: center;
+} 
 
-.takeover img {
+.clock img {
 	max-height: calc(100vh - 16px);
 	max-width: 100%;
 }
 
-.takeover img:hover {
+.clock img:hover {
 	animation: clock 24s infinite linear;
 }
 
@@ -126,7 +128,7 @@ h1 {
 	font-size: 0.80em;
 	line-height: 1.4em;
 	color: white;
-	mix-blend-mode: difference;
+	/*mix-blend-mode: difference;*/
 }
 
 /* lectures  */
