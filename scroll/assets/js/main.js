@@ -1,15 +1,54 @@
-let captionTriggers = document.getElementsByClassName('captioned');
-let captionElement = document.getElementById('caption');
+/* 
+if there are two elements parend and child that contain accessibility tags, 
+the class "captioned" should be added on the parent
+*/
 
-for (let i = 0; i < captionTriggers.length; i++) {
-  let caption = captionTriggers[i].getAttribute('alt');
-  captionTriggers[i].addEventListener('mouseover', () => {displayCaption(caption)}, false);
-  captionTriggers[i].addEventListener('mouseout', () => {displayCaption('')}, false);
-  // captionTriggers[i].getAttribute('alt')
+let captionedTrigger = document.getElementsByClassName('captioned');
+let captionsElement = document.getElementById('captions');
+let altElement = document.getElementById('alt');
+let ariaElement = document.getElementById('aria');
+
+function addCaptions() {
+  for (let i = 0; i < captionedTrigger.length; i++) {
+    let alt = '';
+    let aria = '';
+    let parent, child;
+
+    parent = captionedTrigger[i];
+    child = captionedTrigger[i].firstElementChild ? captionedTrigger[i].firstElementChild : null;
+
+    if (parent.getAttribute('alt') != null) {
+      alt = parent.getAttribute('alt');
+    }
+    if (parent.getAttribute('aria-label') != null) {
+      aria = parent.getAttribute('aria-label');
+    }
+
+    if (child != null) {
+      if (child.getAttribute('alt') != null) {
+        alt = child.getAttribute('alt');
+      }
+      if (child.getAttribute('aria-label') != null) {
+        aria = child.getAttribute('aria-label');
+      }
+    }
+
+    captionedTrigger[i].addEventListener('mouseover', () => {displayAccessibility(alt, aria)}, false);
+    captionedTrigger[i].addEventListener('mouseout', () => {displayAccessibility('', '')}, false);
+  }
 }
 
-function displayCaption(caption) {
-  captionElement.innerHTML = caption;
+function displayAccessibility(altText, ariaText) {
+
+  if (altText != '' || ariaText != '') {
+    captionsElement.style.display = 'block';
+    altElement.innerHTML = altText;
+    ariaElement.innerHTML = ariaText;
+  } else {
+    captionsElement.style.display = 'none';
+    altElement.innerHTML = '';
+    ariaElement.innerHTML = '';
+  }
 }
 
 let backtomenuElement = document.getElementById("backtomenu");
@@ -25,5 +64,6 @@ function scrollToShow() {
 };
 
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  window.addEventListener("scroll", scrollToShow); 
+  window.addEventListener("scroll", scrollToShow);
+  addCaptions();
 }

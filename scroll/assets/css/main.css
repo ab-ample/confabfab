@@ -24,14 +24,11 @@ html {
 }
 
 body {
-	/*font-family: 'Optima', sans-serif;*/
 	font-family: 'Arial', sans-serif;
-	/*font-size: 1.25em;*/
 	font-size: 1.5em;
 	letter-spacing: 0.005em;
 	line-height: 1.5em;
 	background: white;
-	/*background: #E5E3DF;*/
 }
 
 a {
@@ -41,16 +38,9 @@ a {
 /* header */
 header {
 	margin-top: 2em;
-/*	position: fixed;
-	top: 8px;
-	left: 8px;
-	opacity: 0.25;*/
+	margin-bottom: 2em;
 	font-size: 0.8em;
 	line-height: 1.4em;
-}
-
-header:hover {
-	/*opacity: 1;*/
 }
 
 #backtomenu {
@@ -70,36 +60,6 @@ header:hover {
 	height: auto;
 }
 
-/* takeover */
-
-h1 {
-	margin: 0;
-}
-
-.takeover {
-	max-height: calc(100vh - 16px);
-	text-align: center;
-	background: white;
-	/*box-shadow: 0 0 8px 8px white;*/
-}
-
-
-.takeover img {
-	max-height: calc(100vh - 16px);
-	max-width: 100%;
-}
-
-.takeover img:hover {
-	animation: clock 24s infinite linear;
-}
-
-/*table, 
-th, 
-td {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-}*/
-
 table {
 	border: 1px inset black;
 }
@@ -113,12 +73,13 @@ th {
 	text-align: left;
 	font-weight: normal;	
 	color: red;
+
+	padding-top: 0.25em;
 }
 
-/*td {
-	background: white;
-	color: black;
-}*/
+table a {
+	text-decoration: none;
+}
 
 .soon {
 	background: #FF9966;
@@ -136,6 +97,38 @@ th {
 	background: #33FFFF;
 }
 
+/* takeover */
+
+h1 {
+	margin: 0;
+}
+
+.takeover {
+	max-height: calc(100vh - 16px);
+	text-align: center;
+	background: white;
+}
+
+
+.takeover img {
+	max-height: calc(100vh - 16px);
+	max-width: 100%;
+}
+
+.takeover img:hover {
+	animation: clock 24s infinite linear;
+}
+
+#takeoverdescription {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	font-size: 0.80em;
+	line-height: 1.4em;
+	color: white;
+	mix-blend-mode: difference;
+}
+
 /* lectures  */
 section {
 	margin-top: 1em;
@@ -143,20 +136,8 @@ section {
 
 hr {
 	border: 1px inset #ddd;
-	margin-top: 2em;
+	margin: 1em 0;
 }
-
-/*#season3{
-	color: #000;
-}
-
-#season2{
-	color: #000;
-}
-
-#season1{
-	color: #000;
-}*/
 
 h2,
 h3,
@@ -170,6 +151,7 @@ h5 {
 h2 {
 	text-align: center;
 	color: red;
+	margin: 1em 0 0.5em 0;
 }
 
 h2, h5 {
@@ -182,21 +164,11 @@ h3 {
 
 h4 {
 	font-size: 1em;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 article {
-	margin-bottom: 72px;
-}
-
-.highlight {
-	/*background: white;
-	color: blue;*/
-}
-
-.description,
-.biography {
-	/*margin-right: 30%;*/
+	margin-bottom: 1.5em;
 }
 
 .gallery {
@@ -211,6 +183,7 @@ article {
 
 .articledivider {
 	text-align: center;
+	font-family: 'Helvetica', sans-serif;
 }
 
 /* caption */
@@ -218,20 +191,27 @@ article {
 	cursor: help;
 }
 
-#caption {
+#captions {
+	display: none;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	text-align: center;
-	/*font-family: 'Routed Gothic';*/
-	font-family: 'Arial', sans-serif;
 	font-weight: lighter;
 	font-size: 2em;
 	line-height: 1.4em;
+	pointer-events: none;
+}
+
+#alt {
 	color: black;
 	background: #FFFF00;
-	pointer-events: none;
+}
+
+#aria {
+	color: black;
+	background: #66FFCC;
 }
 
 /* footer */
