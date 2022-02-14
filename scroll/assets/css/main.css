@@ -132,6 +132,7 @@ h1 {
 /* lectures  */
 section {
 	margin-top: 1em;
+	margin-right: 15%;
 }
 
 hr {
@@ -235,6 +236,10 @@ footer {
 	body {
 		font-size: 1.2em;
 		line-height: 1.45em;
+	}
+
+	section {
+		margin-right: 0;
 	}
 
 	h3 {
