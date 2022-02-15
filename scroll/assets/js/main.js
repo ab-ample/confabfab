@@ -77,3 +77,30 @@ if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
 
   addCaptions();
 }
+
+const hour = document.querySelector('.hourhand');
+const minute = document.querySelector('.minhand');
+const second = document.querySelector('.sechand');
+
+
+setInterval(() => {
+    let d = calcTime('+2'); //Estonia is UTC+2
+    let hr = d.getHours();
+    let min = d.getMinutes();
+    let sec = d.getSeconds();
+    let hr_rotation = 30 * hr + min / 2; //converting current time
+    let min_rotation = 6 * min;
+    let sec_rotation = 6 * sec;
+  
+    hour.style.transform = `translateX(-50%) rotate(${hr_rotation}deg)`;
+    minute.style.transform = `translateX(-50%) rotate(${min_rotation}deg)`;
+    second.style.transform = `translateX(-50%) rotate(${sec_rotation}deg)`;
+}, 1000);
+
+function calcTime(offset) {
+    let d = new Date();
+    let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    let nd = new Date(utc + (3600000*offset));
+
+    return nd;
+}
