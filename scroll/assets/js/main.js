@@ -53,7 +53,7 @@ function displayAccessibility(altText, ariaText) {
 
 let backtomenuElement = document.getElementById("backtomenu");
 
-function scrollToShow() {
+function clockScroll() {
   backtomenuElement.style.transform = "rotate3d(0, 0, 1, "+(window.pageYOffset/8)+"deg)";
   let y = window.scrollY;
   if (y >= 800) {
@@ -63,7 +63,17 @@ function scrollToShow() {
   }
 };
 
+function debounce(method, delay) {
+    clearTimeout(method._tId);
+    method._tId= setTimeout(function(){
+        method();
+    }, delay);
+}
+
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  window.addEventListener("scroll", scrollToShow);
+  window.addEventListener("scroll", function() {
+    debounce(clockScroll, 10);
+  });
+
   addCaptions();
 }
